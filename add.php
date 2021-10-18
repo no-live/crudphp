@@ -163,7 +163,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST)) { //on initialise no
                 <div class="control-group <?php echo !empty($paysError) ? 'error' : ''; ?> <?php echo !empty($pays) ? 'is-valid' : ''; ?>">
                     <div><label class="control-label">Ville :</label></div>
                     <select name="pays" class="form-select p-2 m-2 <?php echo !empty($paysError) ? 'is-invalid' : ''; ?> <?php echo !empty($pays) ? 'is-valid' : ''; ?>" >
-                        <option placeholder="Choisir" selected disabled value="">Choisir</option>
+                        <option value="" selected>Choisir</option>
                         <option value="amsterdam">Amsterdam</option>
                         <option value="londres">Londres</option>
                         <option value="marseille">Marseille</option>
@@ -173,6 +173,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST)) { //on initialise no
                         <span class="help-inline"><?php echo $paysError; ?></span>
                     <?php endif; ?>
                 </div>
+                
                 <div class="control-group<?php echo !empty($metierError) ? 'error' : ''; ?>">
                     <label class="checkbox-inline">Métier :</label>
                     <div class="controls" >
