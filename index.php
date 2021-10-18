@@ -29,8 +29,8 @@
                         <th>Firstname</th>
                         <th>Age</th>
                         <th>Tel</th>
-                        <th>Pays</th>
                         <th>Email</th>
+                        <th>Pays</th>
                         <th>Comment</th>
                         <th>metier</th>
                         <th>Url</th>
